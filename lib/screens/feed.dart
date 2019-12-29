@@ -24,7 +24,7 @@ class Feed extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(0.0),
                           boxShadow:[
-                            BoxShadow(blurRadius: 10.0,color: Colors.white,spreadRadius: 3)
+                            BoxShadow(blurRadius: 10.0,color: Colors.white,spreadRadius: 0)
                           ]
                       ),
                       child: new Column(
