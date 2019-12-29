@@ -1,8 +1,6 @@
 import 'package:chatt/services/auth.dart';
-import 'package:chatt/services/database.dart';
 import 'package:chatt/shared/decoration.dart';
 import 'package:chatt/shared/loading.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 class SignUp extends StatefulWidget {
   final Function toggleView;

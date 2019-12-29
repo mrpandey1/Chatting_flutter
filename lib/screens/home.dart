@@ -2,8 +2,6 @@ import 'package:chatt/modal/details.dart';
 import 'package:chatt/screens/chat.dart';
 import 'package:chatt/screens/group.dart';
 import 'package:chatt/screens/profile.dart';
-import 'package:chatt/services/auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:chatt/services/database.dart';
 import 'package:provider/provider.dart';
@@ -20,7 +18,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     super.initState();
     tabController=new TabController(length: 3,vsync: this);
   }
- final AuthServices _auth=AuthServices();
   @override
   Widget build(BuildContext context) {
     return StreamProvider<List<Details>>.value(

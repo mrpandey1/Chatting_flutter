@@ -1,7 +1,5 @@
 import 'dart:io';
 import 'dart:async';
-import 'dart:math';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 class Group extends StatefulWidget {
@@ -36,27 +34,27 @@ class _GroupState extends State<Group> {
   }
   Widget enableUpload()
   {
-    return Container(
-      child: Column(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.all(40),
-            child: Center(child: Image.file(sampleImage,height: 300,width: 300,)),
-          ),
-          RaisedButton(
-            elevation: 7.0,
-            child: Text('upload',style: TextStyle(color: Colors.white),),
-            color: Colors.pink,
-            onPressed: ()async{
-              var randomno=Random(25);
-                final StorageReference firebaseStorageRef=FirebaseStorage.instance.ref().child(
-                  'profilepics/${randomno.nextInt(5000).toString()}.jpg'
-                );
-              final StorageUploadTask task=firebaseStorageRef.putFile(sampleImage);
-            },
-          )
-        ],
-      ),
-    );
+     return Container(
+    //   child: Column(
+    //     children: <Widget>[
+    //       Padding(
+    //         padding: const EdgeInsets.all(40),
+    //         child: Center(child: Image.file(sampleImage,height: 300,width: 300,)),
+    //       ),
+    //       RaisedButton(
+    //         elevation: 7.0,
+    //         child: Text('upload',style: TextStyle(color: Colors.white),),
+    //         color: Colors.pink,
+    //         onPressed: ()async{
+    //           var randomno=Random(25);
+    //             final StorageReference firebaseStorageRef=FirebaseStorage.instance.ref().child(
+    //               'profilepics/${randomno.nextInt(5000).toString()}.jpg'
+    //             );
+    //           //final StorageUploadTask task=firebaseStorageRef.putFile(sampleImage);
+    //         },
+    //       )
+    //     ],
+    //   ),
+     );
   }
 }

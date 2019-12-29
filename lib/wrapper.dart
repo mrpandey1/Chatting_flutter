@@ -1,7 +1,6 @@
 import 'package:chatt/authenticate/authenticate.dart';
 import 'package:chatt/modal/user.dart';
 import 'package:chatt/screens/home.dart';
-import 'package:chatt/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 class Wrapper extends StatefulWidget {

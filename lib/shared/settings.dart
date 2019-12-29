@@ -1,4 +1,3 @@
-import 'package:chatt/modal/details.dart';
 import 'package:chatt/modal/user.dart';
 import 'package:chatt/services/database.dart';
 import 'package:chatt/shared/decoration.dart';
@@ -70,7 +69,7 @@ class _SettingsState extends State<Settings> {
                   );
         }
         else{
-            Loading();
+           return  Loading();
         }
         
       }

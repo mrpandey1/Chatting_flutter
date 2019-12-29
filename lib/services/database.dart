@@ -1,7 +1,6 @@
 import 'package:chatt/modal/details.dart';
 import 'package:chatt/modal/user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:provider/provider.dart';
 class DatabaseServices
 {
   final String uid;
