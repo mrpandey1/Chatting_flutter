@@ -1,18 +1,20 @@
 import 'package:chatt/modal/details.dart';
 import 'package:chatt/modal/user.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:intl/intl.dart';
 class DatabaseServices
 {
   final String uid;
   DatabaseServices({this.uid});
   final CollectionReference userCollection=Firestore.instance.collection('users');
-  Future updateUserData(String name,String email,String profilepic) async
+  Future updateUserData(String name,String email,String profilepic,String date) async
   {
     return await userCollection.document(uid).setData({
       'name':name,
       'email':email,
       'profilepic':profilepic,
-      'uid':uid
+      'uid':uid,
+      'date':date
     });
   }
   //getting data from snapshot
@@ -25,7 +27,7 @@ class DatabaseServices
         name: doc.data['name'],
         email: doc.data['email'],
         profilepic: doc.data['profilepic'],
-
+        date: doc.data['date']
       );
     }).toList();
   }
@@ -34,7 +36,7 @@ class DatabaseServices
 
   Stream<List<Details>> get details
   {
-    return userCollection.snapshots().map(_usersFromSnapshot);
+    return userCollection.orderBy('date',descending:true).snapshots().map(_usersFromSnapshot);
   }
   UserName _userNameFromSnapshot(DocumentSnapshot snapshot)
   {
@@ -42,7 +44,8 @@ class DatabaseServices
       uid: uid,
       name: snapshot.data['name'],
       email: snapshot.data['email'],
-      profilepic: snapshot.data['profilepic']
+      profilepic: snapshot.data['profilepic'],
+      date: snapshot.data['date']
     );
   }
   Stream<UserName> get userName

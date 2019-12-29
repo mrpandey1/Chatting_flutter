@@ -3,6 +3,7 @@ import 'package:chatt/services/database.dart';
 import 'package:chatt/shared/decoration.dart';
 import 'package:chatt/shared/loading.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 class Settings extends StatefulWidget {
@@ -54,7 +55,8 @@ class _SettingsState extends State<Settings> {
                               await DatabaseServices(uid: user.uid).updateUserData(
                                 name??user.name, 
                                 user.email, 
-                                user.profilepic
+                                user.profilepic,
+                                user.date
                                 );
                             Navigator.pop(context);
                             }

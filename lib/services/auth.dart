@@ -1,6 +1,7 @@
 import 'package:chatt/modal/user.dart';
 import 'package:chatt/services/database.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:intl/intl.dart';
 class AuthServices
 {
   final FirebaseAuth _auth=FirebaseAuth.instance;
@@ -18,12 +19,14 @@ class AuthServices
   Future userRegistrationwithEmailPasssword(String email,String password,String name) async
   {
     try{
+      var now=DateTime.now();
       AuthResult result=await _auth.createUserWithEmailAndPassword(email: email,password: password);
       FirebaseUser user=result.user;
       await DatabaseServices(uid: user.uid).updateUserData(
         name,
         email,
         'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn5pvPtaWxy-oW9MVVVA5Gcg4CxfXGXCRKvsKNeQKjOBRbOAgcLw&s'
+        ,DateFormat('dd-mm-yyyy').format(now)
         );
       return user;
     }catch(e)

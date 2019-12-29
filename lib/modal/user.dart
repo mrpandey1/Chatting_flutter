@@ -9,5 +9,6 @@ class UserName
   final String name;
   final String email;
   final String profilepic;
-  UserName({this.uid,this.name,this.email,this.profilepic});
+  var date;
+  UserName({this.uid,this.name,this.email,this.profilepic,this.date});
 }

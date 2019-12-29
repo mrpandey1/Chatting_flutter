@@ -1,0 +1,157 @@
+{
+  "id": "dd022999-1b71-4128-bddf-162dcbb2eb0c",
+  "name": "Kya haal",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "22f94cf8-c8f2-426d-a1b6-d2b8fcf99e6b",
+          "required": false,
+          "dataType": "@kyahaal",
+          "name": "kyahaal",
+          "value": "$kyahaal",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "condition": "",
+          "speech": "My name is Kya haal . I am the chatting bot of this application."
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "bc2ead5e-46ad-4cf8-b9f4-7b8b3a5cae17",
+      "data": [
+        {
+          "text": "haal",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "19b0796d-5b59-426b-8979-b09d316f5bf5",
+      "data": [
+        {
+          "text": "kyahaal",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "3536ec31-9c8b-4a5f-8fa4-815a5fe41961",
+      "data": [
+        {
+          "text": "kyahaaal",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "04264731-3bad-441c-bcb0-ac1c24318b11",
+      "data": [
+        {
+          "text": "what is your name",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 1,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "05f84995-22ac-4881-b46c-86c46ab5a0b5",
+      "data": [
+        {
+          "text": "what is kya haal",
+          "alias": "kyahaal",
+          "meta": "@kyahaal",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "1da4e2f7-bf3b-484d-aea1-7b5595cb4fa6",
+      "data": [
+        {
+          "text": "kaun ho tum",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "5d4047aa-7123-4861-b744-5b18ee7d6597",
+      "data": [
+        {
+          "text": "kya haal",
+          "alias": "kyahaal",
+          "meta": "@kyahaal",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    },
+    {
+      "id": "01dd8e19-5bc2-47dd-bf2b-0f64f1c024be",
+      "data": [
+        {
+          "text": "kya",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "updated": 0,
+      "isAuto": false
+    }
+  ],
+  "followUpIntents": [],
+  "liveAgentHandoff": false,
+  "endInteraction": true,
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "templates": []
+}

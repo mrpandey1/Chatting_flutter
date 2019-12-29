@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "zeta-essence-197305",
+  "private_key_id": "fb138df75fc1ca385fe8494924bc017f4cc34da7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCdhX3xoaSWrZYY\nuDlizLPQdVHPyzdV+/d4XeWthXI15bLrF6n1Y2XVmw4t6Rt6deIHFc7ItoGljFc6\ntXzYnFn3bwUsXXiI4KY7pHx91phIj6znnXi30Qug1fgli4tnMZ8ER2pvZfptSdrN\ndc0EYdEQHuHf6cj9IS6BdRnMAy7Ah7C3Q1+d7uIruOpwka74ReozjFtcjA7m094Q\nt4BOAm11FUbrW6p3qzdLLcLWiYOLA0dGX7yBxe7ah2ai67WgTP2SpF2i7Mgq6CLi\n/EX/YeYD8O0zAhTl//Fp2d1nmmWfUCqIXZDQt102ZXzJgAS0DYkQbphcKraslbdt\nkYjZSkdRAgMBAAECgf8DaqmpPrj93LKTMoBGejT76v7I69Escc+Ftijw7cA3GPg1\nnWry/k/w79xiHSVABoWi+1wNR+ghXy8I9XmyzRGDYxsWg8Q3xrsWNVvRFXqxFyRU\ns1IwIDyQq3OU9TM/UQ13QnaCSE+FTOZZNfHvxS5M35oEdj5LVN9qZBYeMfweTyl6\nZfxwvPLL7yqSfX1Yn+gAAYRg8PHrQsYMfDS7Tq0VIXaQH6Qmfr8VtNiLuAw0voqa\nYOImHQGNWH/4tGkihcSQJCpMC4Zec7TIoZNw6uJgF3RpylpqXzPp16PJbtJ0Kqp2\nNNVaKoGLtC93OhBxm+oacHOEXT0aPRgKEAgdBsECgYEA0l1lhYKzDUqH7MufyxrP\n4xyOtIdKFyqQbFeQJEKEubmFuz65qgiusvuInArll8twVxojVEL2nBfSXXxZFOQW\nUEP4y8yOQTdKShekYLyYKHf/0kvy5YNe7rw+yyunlcSpbDA4RAL++iqp87TdFYkL\nKIWW837wjvrIrjGmYo0PVWUCgYEAv7Fwt7dRZUYdTWUGYa6QUo76n/7EW8AAf0Re\n6+t1/ZNyG729jFAw7zenkdSdkdVra6Lll4Uv3SCXyt3q1N9j0gSpHk9mWQVpwB3V\nUfqgrFkdHtxW10zfWYLeWvcKe5hyWJ5ss6JdqFvtq3mn4AIMUQPfJhmstipiU/UX\nV1/scX0CgYAlPaeFVTgBeFpLz1iAikSXPiz9RJ4XL8/VfkLkSGpavr8wANC5i0Py\nJ5ltlnhCwR8oLFZoyloCFC2Ho0XZ7u8MUpwu6A2e+fzK1Riij4CYWXYOcqeTfghG\nV0j+isHmP6SGpJqxX55oBzmDDVe+Qj6Zc9zfSm+nwDnarKt58uLuCQKBgAYf90gH\ndXRU7y6/4ZpRZ48bvmpKS5/a3Kk0WAwVs+lsQqMcRugqz8V088e3EWnNdec0hz12\nJfdcyTzUJmKy2I+nUngDdXO2tpBK47wA1A1ts35+789lR2WmxtAFQLJ+RnkKZtK+\nh1uPxGJMOs7vgdE83G5tN5WCeS3RkPNbv0RJAoGBAMAUxvzDNg2C28s3s6OkwK06\nkzxIpdI/VMtlTF4qyevQVzWB7LEJv4AlyeoaRV98r/ZV6xtQSq9dcgxT87mQBVbl\nnugvorSrraUOmQv6J22PDoWoV94DwoNQjEq1qzqHbkQVrSLqY3p6b2aqii/4dLA8\ne4SoHjCJB76jU3/B8AWa\n-----END PRIVATE KEY-----\n",
+  "client_email": "kyahaal@zeta-essence-197305.iam.gserviceaccount.com",
+  "client_id": "113330368692494982658",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/kyahaal%40zeta-essence-197305.iam.gserviceaccount.com"
+}

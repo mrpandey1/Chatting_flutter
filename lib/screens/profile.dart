@@ -9,6 +9,7 @@ import 'package:chatt/shared/settings.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:path/path.dart';
 class Profile extends StatefulWidget {
@@ -63,11 +64,13 @@ class _ProfileState extends State<Profile> {
     //getting the storages name
     String downloadUri =await taskSnapshot.ref.getDownloadURL();
     //updating the data
+    var now=DateTime.now();
           UserName user=snapshot.data;
            await DatabaseServices(uid: user.uid).updateUserData(
                                 name??user.name, 
                                 user.email, 
-                                downloadUri
+                                downloadUri,
+                                DateFormat('dd-mm-yyyy').format(now)
                                 );
   }
         if(snapshot.hasData)
@@ -93,7 +96,7 @@ class _ProfileState extends State<Profile> {
                             image: NetworkImage(dp),
                             fit: BoxFit.cover
                           ),
-                          borderRadius: BorderRadius.circular(75.0),
+                          borderRadius: BorderRadius.circular(0.0),
                           boxShadow:[
                             BoxShadow(blurRadius: 7.0,color: Colors.pink,spreadRadius: 0)
                           ]
