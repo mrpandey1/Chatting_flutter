@@ -7,6 +7,7 @@ class DatabaseServices
   final String uid;
   DatabaseServices({this.uid});
   final CollectionReference userCollection=Firestore.instance.collection('users');
+  final CollectionReference messageCollection=Firestore.instance.collection('message');
   Future updateUserData(String name,String email,String profilepic,String date) async
   {
     return await userCollection.document(uid).setData({
@@ -17,7 +18,24 @@ class DatabaseServices
       'date':date
     });
   }
-  //getting data from snapshot
+  Future updateUserMessage(String text,String from,String to,String date) async
+  {
+    return await messageCollection.add({
+        'message':text,
+         'from':from,
+         'to':to,
+         'date':date
+    });
+  }
+  // Future updateUserMessage(String text,String from,String to) async
+  // {
+  //   return await messageCollection.document(uid).setData({
+  //     'message':text,
+  //     'from':from,
+  //     'to':to
+  //   });
+  // }
+  // //getting data from snapshot
   List<Details> _usersFromSnapshot(QuerySnapshot snapshot)
   {
     return snapshot.documents.map((doc)

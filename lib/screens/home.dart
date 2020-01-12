@@ -1,6 +1,8 @@
 import 'package:chatt/modal/details.dart';
 import 'package:chatt/screens/chat.dart';
 import 'package:chatt/screens/group.dart';
+import 'package:chatt/screens/groupchat.dart';
+import 'package:chatt/screens/groupchatcontroller.dart';
 import 'package:chatt/screens/profile.dart';
 import 'package:flutter/material.dart';
 import 'package:chatt/services/database.dart';
@@ -16,7 +18,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   void initState()
   {
     super.initState();
-    tabController=new TabController(length: 3,vsync: this);
+    tabController=new TabController(length: 4,vsync: this);
   }
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       value: DatabaseServices().details,
       child: MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             title: Text('Kya Haal ?'),
@@ -32,8 +34,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             bottom:   TabBar(
           controller: tabController,
           tabs: <Widget>[
-            new Tab(icon: Icon(Icons.chat),),
             new Tab(icon: Icon(Icons.group),),
+            new Tab(icon: Icon(Icons.photo),),
+            new Tab(icon: Icon(Icons.chat),),
             new Tab(icon: Icon(Icons.person),),
           ],
         ),
@@ -41,8 +44,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       body: new TabBarView(
         controller: tabController,
         children: <Widget>[
-          Chat(),
+          GroupChat(),
           Group(),
+          Chat(),
           Profile()
         ],
       ),

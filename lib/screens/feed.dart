@@ -19,7 +19,6 @@ class Feed extends StatelessWidget {
               child: new Column(
                 children: <Widget>[
                   new Card(
-                        color: Colors.pink,
                     child: new Container(
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(0.0),
@@ -35,8 +34,9 @@ class Feed extends StatelessWidget {
                            TextStyle(color: Colors.black),),
                          ),
                          Container(
-                           width: MediaQuery.of(context).size.width-100,
-                            height: MediaQuery.of(context).size.height-300,
+                          //  width: MediaQuery.of(context).size.width-50,
+                          //   height: MediaQuery.of(context).size.height-400,
+                          height: 400,
                             decoration: BoxDecoration(
                               color: Colors.red,
                               image: DecorationImage(
